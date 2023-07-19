@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func numTeams(rating []int) int {
 	num := 0
 	asc := make(map[int][]int, 0)
@@ -22,9 +20,6 @@ func numTeams(rating []int) int {
 			}
 		}
 	}
-
-	fmt.Println(asc)
-	fmt.Println(desc)
 
 	for _, i := range rating {
 		for _, j := range asc[i] {
